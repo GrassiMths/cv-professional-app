@@ -1,118 +1,129 @@
-# CV Professional - Desktop App
+# 🧾 Currify - Desktop App
 
-Sistema profissional para criação de currículos elegantes. Transforme seus dados em um currículo profissional em minutos!
+Sistema profissional para criação de currículos elegantes.  
+Transforme seus dados em um currículo profissional em minutos com o **Currify**!
 
-## 🚀 Características
+---
 
-- ✅ **Interface moderna e intuitiva**
-- ✅ **Preview em tempo real**
-- ✅ **Exportação para PDF** idêntica ao preview
-- ✅ **Modo claro/escuro**
-- ✅ **Geolocalização automática**
-- ✅ **App desktop** - não precisa de internet
+## 🚀 **Características**
+
+- ✅ **Interface moderna e intuitiva**  
+- ✅ **Preview em tempo real**  
+- ✅ **Exportação para PDF** idêntica ao preview  
+- ✅ **Modo claro/escuro**  
+- ✅ **Geolocalização automática**  
+- ✅ **App desktop** – não precisa de internet  
 - ✅ **Multiplataforma** (Windows, macOS, Linux)
 
-## 📦 Instalação
+---
 
-### Desenvolvimento
+## 📦 **Instalação**
 
-````bash
-# Instalar dependências
+### 🧩 Desenvolvimento
+
+```bash
+# Instalar dependências principais
 npm install
-cd frontend && npm install
-cd ../backend && npm install
-cd ..
 
-# Desenvolvimento
-npm run dev
-Produção
+# Instalar dependências do frontend
+cd frontend && npm install
+
+# Instalar dependências do backend
+cd ../backend && npm install
+
+# Voltar para a raiz do projeto
+cd ..
+🚧 Desenvolvimento Local
 bash
+Copiar código
+npm run dev
+🏗️ Produção
+bash
+Copiar código
 # Build do app
 npm run build
 
-# Os executáveis estarão em dist-electron/
+# Os executáveis estarão em:
+dist-electron/
 🎯 Como Usar
 Preencha suas informações pessoais
 
 Adicione experiências, formação e habilidades
 
-Visualize em tempo real
+Visualize o resultado em tempo real
 
 Exporte para PDF com um clique
 
-📁 Estrutura
-text
-cv-professional-app/
-├── electron/          # App desktop
-├── frontend/          # Interface React
-├── backend/           # Servidor/API
-├── assets/           # Ícones e recursos
-└── scripts/          # Scripts de build
-🛠 Tecnologias
+📁 Estrutura do Projeto
+bash
+Copiar código
+currify/
+├── electron/          # App desktop (Electron)
+├── frontend/          # Interface React (Vite + Tailwind)
+├── backend/           # Servidor/API (Node.js + Express)
+├── assets/            # Ícones e recursos visuais
+└── scripts/           # Scripts de build e automação
+🛠️ Tecnologias Utilizadas
 Frontend: React, Vite, TailwindCSS
 
 Backend: Node.js, Express, Puppeteer
 
 Desktop: Electron
 
-PDF: Puppeteer/Chromium
+PDF Renderer: Puppeteer/Chromium
 
 👨‍💻 Desenvolvido por
 Matheus Grassi
-Instagram • GitHub
+📸 Instagram • 💻 GitHub
 
-*CV Professional v2.3.0 - Transformando dados em oportunidades!*
+Currify v2.3.0 – Transformando dados em oportunidades!
 
-text
-
-### 11. **.gitignore**
-Dependencies
+🧹 .gitignore
+bash
+Copiar código
+# Dependências
 node_modules/
 frontend/node_modules/
 backend/node_modules/
 
-Build outputs
+# Builds
 dist/
 dist-electron/
 frontend/dist/
 backend/dist/
 
-Environment variables
+# Variáveis de ambiente
 .env
 .env.local
 
-Logs
-.log
-npm-debug.log
+# Logs
+*.log
+npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-OS generated files
+# Arquivos do sistema
 .DS_Store
-.DS_Store?
-._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
 
-IDE
+# IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 
-Electron
+# Electron
 out/
-
-text
-
-### 12. **backend/package.json**
-```json
+📦 backend/package.json
+json
+Copiar código
 {
-  "name": "cv-professional-backend",
+  "name": "currify-backend",
   "version": "2.3.0",
-  "description": "Backend para CV Professional",
+  "description": "Backend para Currify",
   "main": "server-electron.js",
   "scripts": {
     "start": "node server.js",
@@ -127,4 +138,3 @@ text
     "dotenv": "^16.0.3"
   }
 }
-````
