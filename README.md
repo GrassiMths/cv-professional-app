@@ -1,115 +1,121 @@
-# 🧾 Currify - Desktop App
+# 💼 CV Professional - Desktop App
 
-Sistema profissional para criação de currículos elegantes.  
-Transforme seus dados em um currículo profissional em minutos com o **Currify**!
+Sistema profissional para criação de currículos elegantes. Transforme seus dados em um currículo profissional em minutos!
 
 ---
 
-## 🚀 **Características**
+## 🚀 Características
 
-- ✅ **Interface moderna e intuitiva**  
-- ✅ **Preview em tempo real**  
-- ✅ **Exportação para PDF** idêntica ao preview  
-- ✅ **Modo claro/escuro**  
-- ✅ **Geolocalização automática**  
-- ✅ **App desktop** – não precisa de internet  
+- ✅ **Interface moderna e intuitiva**
+- ✅ **Preview em tempo real**
+- ✅ **Exportação para PDF** idêntica ao preview
+- ✅ **Modo claro/escuro**
+- ✅ **Geolocalização automática**
+- ✅ **App desktop** - não precisa de internet
 - ✅ **Multiplataforma** (Windows, macOS, Linux)
 
 ---
 
-## 📦 **Instalação**
+## 📦 Instalação
 
-### 🧩 Desenvolvimento
+### 🔧 Desenvolvimento
 
 ```bash
-# Instalar dependências principais
+# Instalar dependências
 npm install
-
-# Instalar dependências do frontend
 cd frontend && npm install
-
-# Instalar dependências do backend
 cd ../backend && npm install
-
-# Voltar para a raiz do projeto
 cd ..
-🚧 Desenvolvimento Local
-bash
-Copiar código
+
+# Iniciar modo de desenvolvimento
 npm run dev
-🏗️ Produção
-bash
-Copiar código
-# Build do app
+```
+
+### ⚙️ Produção
+
+```bash
+# Gerar build do app
 npm run build
 
-# Os executáveis estarão em:
-dist-electron/
-🎯 Como Usar
-Preencha suas informações pessoais
+# Os executáveis estarão em dist-electron/
+```
 
-Adicione experiências, formação e habilidades
+---
 
-Visualize o resultado em tempo real
+## 🎯 Como Usar
 
-Exporte para PDF com um clique
+1. Preencha suas informações pessoais  
+2. Adicione experiências, formação e habilidades  
+3. Visualize seu currículo em tempo real  
+4. Exporte para PDF com apenas um clique  
 
-📁 Estrutura do Projeto
-bash
-Copiar código
-currify/
-├── electron/          # App desktop (Electron)
-├── frontend/          # Interface React (Vite + Tailwind)
-├── backend/           # Servidor/API (Node.js + Express)
-├── assets/            # Ícones e recursos visuais
-└── scripts/           # Scripts de build e automação
-🛠️ Tecnologias Utilizadas
-Frontend: React, Vite, TailwindCSS
+---
 
-Backend: Node.js, Express, Puppeteer
+## 📁 Estrutura do Projeto
 
-Desktop: Electron
+```
+cv-professional-app/
+├── electron/          # App desktop
+├── frontend/          # Interface React
+├── backend/           # Servidor/API
+├── assets/            # Ícones e recursos
+└── scripts/           # Scripts de build
+```
 
-PDF Renderer: Puppeteer/Chromium
+---
 
-👨‍💻 Desenvolvido por
-Matheus Grassi
-📸 Instagram • 💻 GitHub
+## 🛠 Tecnologias
 
-Currify v2.3.0 – Transformando dados em oportunidades!
+**Frontend:** React, Vite, TailwindCSS  
+**Backend:** Node.js, Express, Puppeteer  
+**Desktop:** Electron  
+**PDF:** Puppeteer/Chromium  
 
-🧹 .gitignore
-bash
-Copiar código
-# Dependências
+---
+
+## 👨‍💻 Desenvolvido por
+
+**Matheus Grassi**  
+📷 [Instagram](https://instagram.com/) • 💻 [GitHub](https://github.com/)  
+
+> *CV Professional v2.3.0 - Transformando dados em oportunidades!*
+
+---
+
+## 🧹 .gitignore
+
+```
+# Dependencies
 node_modules/
 frontend/node_modules/
 backend/node_modules/
 
-# Builds
+# Build outputs
 dist/
 dist-electron/
 frontend/dist/
 backend/dist/
 
-# Variáveis de ambiente
+# Environment variables
 .env
 .env.local
 
 # Logs
-*.log
-npm-debug.log*
+.log
+npm-debug.log
 yarn-debug.log*
 yarn-error.log*
 
-# Arquivos do sistema
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
 
-# IDEs
+# IDE
 .vscode/
 .idea/
 *.swp
@@ -117,13 +123,17 @@ Thumbs.db
 
 # Electron
 out/
-📦 backend/package.json
-json
-Copiar código
+```
+
+---
+
+## 📦 backend/package.json
+
+```json
 {
-  "name": "currify-backend",
+  "name": "cv-professional-backend",
   "version": "2.3.0",
-  "description": "Backend para Currify",
+  "description": "Backend para CV Professional",
   "main": "server-electron.js",
   "scripts": {
     "start": "node server.js",
@@ -138,3 +148,4 @@ Copiar código
     "dotenv": "^16.0.3"
   }
 }
+```
